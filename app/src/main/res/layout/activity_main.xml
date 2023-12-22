@@ -1,0 +1,85 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr"/>
+
+        <RadioButton
+            android:id="@+id/radioMme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mme"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="67dp"
+        android:hint="Nom" />
+
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="247dp"
+        android:hint="Prenom" />
+
+    <CheckBox
+        android:id="@+id/checkboxHackathon"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPrenom"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="92dp"
+        android:text="Hackathon" />
+
+    <CheckBox
+        android:id="@+id/checkboxCertification"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxHackathon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="92dp"
+        android:text="Session de certification" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="223dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="582dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="63dp"
+        android:text="Submit"
+        android:textColorHighlight="#494545"
+        android:textColorLink="#655656" />
+</RelativeLayout>
